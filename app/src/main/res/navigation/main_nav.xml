@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/listGameFragment">
+
+    <fragment
+        android:id="@+id/listGameFragment"
+        android:name="com.agusw.test_list_games.pages.ListGameFragment"
+        android:label="ListGameFragment"
+        tools:layout="@layout/fragment_list_game" />
+
+    <fragment
+        android:id="@+id/favGameFragment"
+        android:name="com.agusw.test_list_games.pages.FavGameFragment"
+        android:label="FavGameFragment"
+        tools:layout="@layout/fragment_fav_game" />
+
+    <action
+        android:id="@+id/action_global_listGameFragment"
+        app:destination="@id/listGameFragment" />
+
+    <action
+        android:id="@+id/action_global_favGameFragment"
+        app:destination="@id/favGameFragment" />
+</navigation>
